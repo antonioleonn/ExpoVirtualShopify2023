@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6B738F8B-8B5B-47A8-853B-D241BDBF13F7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Formularios.My.MyApplication</StartupObject>
+    <RootNamespace>Formularios</RootNamespace>
+    <AssemblyName>Conecta Shopify</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Conecta Shopify.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Conecta Shopify.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>images-2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.3.0\lib\net48\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clientes\frmCambiarPassword.designer.vb">
+      <DependentUpon>frmCambiarPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\frmCambiarPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\frmEditaCliente.designer.vb">
+      <DependentUpon>frmEditaCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\frmEditaCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\frmImportarClientes.designer.vb">
+      <DependentUpon>frmImportarClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\frmImportarClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\frmListarClientes.Designer.vb">
+      <DependentUpon>frmListarClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\frmListarClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\frmLayOuts.Designer.vb">
+      <DependentUpon>frmLayOuts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\frmLayOuts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\frmServidoresPedidos.Designer.vb">
+      <DependentUpon>frmServidoresPedidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\frmServidoresPedidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\frmServidorPrincipal.Designer.vb">
+      <DependentUpon>frmServidorPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\frmServidorPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\frmTareas.Designer.vb">
+      <DependentUpon>frmTareas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\frmTareas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInicio.Designer.vb">
+      <DependentUpon>frmInicio.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Objetos\VariablesGlobales.vb" />
+    <Compile Include="Objetos\TransparentPanel.designer.vb">
+      <DependentUpon>TransparentPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Objetos\TransparentPanel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Pedidos\frmPedido.Designer.vb">
+      <DependentUpon>frmPedido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\frmPedido.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\frmReportes.designer.vb">
+      <DependentUpon>frmReportes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\frmReportes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Productos\frmEditaProducto.designer.vb">
+      <DependentUpon>frmEditaProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Productos\frmEditaProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Productos\frmEditarListaProductos.Designer.vb">
+      <DependentUpon>frmEditarListaProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Productos\frmEditarListaProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Productos\frmImagenesProductos.Designer.vb">
+      <DependentUpon>frmImagenesProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Productos\frmImagenesProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Productos\frmImportarProductos.designer.vb">
+      <DependentUpon>frmImportarProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Productos\frmImportarProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Productos\frmListarProductos.designer.vb">
+      <DependentUpon>frmListarProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Productos\frmListarProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Clientes\frmCambiarPassword.resx">
+      <DependentUpon>frmCambiarPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\frmEditaCliente.resx">
+      <DependentUpon>frmEditaCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\frmImportarClientes.resx">
+      <DependentUpon>frmImportarClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\frmListarClientes.resx">
+      <DependentUpon>frmListarClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\frmLayOuts.resx">
+      <DependentUpon>frmLayOuts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\frmServidoresPedidos.resx">
+      <DependentUpon>frmServidoresPedidos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\frmServidorPrincipal.resx">
+      <DependentUpon>frmServidorPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\frmTareas.resx">
+      <DependentUpon>frmTareas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInicio.resx">
+      <DependentUpon>frmInicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Objetos\TransparentPanel.resx">
+      <DependentUpon>TransparentPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\frmPedido.resx">
+      <DependentUpon>frmPedido.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\frmReportes.resx">
+      <DependentUpon>frmReportes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Productos\frmEditaProducto.resx">
+      <DependentUpon>frmEditaProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Productos\frmEditarListaProductos.resx">
+      <DependentUpon>frmEditarListaProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Productos\frmImagenesProductos.resx">
+      <DependentUpon>frmImagenesProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Productos\frmImportarProductos.resx">
+      <DependentUpon>frmImportarProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Productos\frmListarProductos.resx">
+      <DependentUpon>frmListarProductos.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\Razon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Classes\Classes.vbproj">
+      <Project>{a2cb0dcf-668e-4c89-b37a-b6e55391cb50}</Project>
+      <Name>Classes</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash-solid-15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cargando.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-times-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window-close-regular.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Candado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-tie-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alternativo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Duplicado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Agotado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file-excel-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images-2.ico" />
+    <None Include="Resources\image.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
